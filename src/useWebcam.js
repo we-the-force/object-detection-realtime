@@ -8,7 +8,7 @@ const useWebcam = videoRef => {
         .getUserMedia({
           audio: false,
           video: {
-            facingMode: 'user'
+            facingMode: { exact: "environment" }
           }
         })
         .then(stream => {
