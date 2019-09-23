@@ -25,14 +25,14 @@ const App = () => {
         playsInline
         muted
         ref={videoRef}
-        width="600"
-        height="500"
+        width="100%"
+        height="auto"
       />
       <canvas
         className={styles.fixed}
         ref={canvasRef}
-        width="600"
-        height="500"
+        width="100%"
+        height="auto"
       />
     </>
   )
