@@ -8,6 +8,9 @@ const useWebcam = videoRef => {
         .getUserMedia({
           audio: false,
           video: {
+            width: { min: 1024, ideal: 1280, max: 1920 },
+            height: { min: 776, ideal: 720, max: 1080 },
+            frameRate : {min: 30, max: 30 },
             facingMode: { exact: "environment" }
           }
         })
